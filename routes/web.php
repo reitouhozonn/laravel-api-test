@@ -21,6 +21,9 @@ Route::get('/', function () {
         'canRegister' => Route::has('register'),
     ]);
 });
+Route::get('/taskList', function () {
+    return Inertia::render('taskList');
+})->middleware(['auth', 'verified'])->name('taskList');
 
 
 // Route::get('/{any}', function () {

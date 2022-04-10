@@ -20,12 +20,11 @@
 </head>
 
 <body class="font-sans antialiased">
+    {{-- <script src="{{ mix('js/app.js') }}" befer></script> --}}
+    @inertia
     {{-- <div id="app">
         test
     </div> --}}
-
-    {{-- <script src="{{ mix('js/app.js') }}" befer></script> --}}
-    @inertia
 
     {{-- @env('local')
     <script src="http://localhost:8080/js/bundle.js"></script>
