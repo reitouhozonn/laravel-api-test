@@ -19,18 +19,18 @@ const showingNavigationDropdown = ref(false);
                     <div class="flex justify-between h-16">
                         <div class="flex">
                             <!-- Logo -->
-                            <!-- <div class="shrink-0 flex items-center">
+                            <div class="shrink-0 flex items-center">
                                 <Link :href="route('dashboard')">
                                 <BreezeApplicationLogo class="block h-9 w-auto" />
                                 </Link>
-                            </div> -->
+                            </div>
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </BreezeNavLink>
-                                <BreezeNavLink :href="route('taskList')" :active="route().current('taskList')">
+                                <BreezeNavLink :href="route('tasks')" :active="route().current('tasks')">
                                     taskList
                                 </BreezeNavLink>
                             </div>
@@ -91,7 +91,7 @@ const showingNavigationDropdown = ref(false);
                         <BreezeResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
                         </BreezeResponsiveNavLink>
-                        <BreezeResponsiveNavLink :href="route('taskList')" :active="route().current('taskList')">
+                        <BreezeResponsiveNavLink :href="route('tasks')" :active="route().current('tasks')">
                             taskList
                         </BreezeResponsiveNavLink>
                     </div>
